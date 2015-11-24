@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.akashpopat.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myNanodegeeapps"
+        android:id="@+id/headingText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"/>
+
+    <Button
+        android:text="@string/spotifyStreamer"
+        android:id="@+id/spotifyButton"
+        android:layout_below="@+id/headingText"
+        android:layout_marginTop="49dp"
+        style="@style/commonButton"/>
+
+    <Button
+        android:id="@+id/scoreappButton"
+        android:layout_below="@+id/spotifyButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/scoresApp"
+        style="@style/commonButton"
+        />
+
+    <Button
+        android:id="@+id/libraryButton"
+        android:layout_below="@+id/scoreappButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/libraryApp"
+        style="@style/commonButton" />
+
+    <Button
+        android:id="@+id/biggerButton"
+        android:layout_below="@+id/libraryButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/buildItBigger"
+        style="@style/commonButton"/>
+
+    <Button
+        android:id="@+id/xyzButton"
+        android:layout_below="@+id/biggerButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/xyzReader"
+        style="@style/commonButton"/>
+
+    <Button
+        android:id="@+id/capstoneButton"
+        android:layout_below="@+id/xyzButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/capstoneApp"
+        android:background="#F50057"
+        android:textColor="@android:color/white"
+        style="@style/commonButton"/>
+</RelativeLayout>
+
